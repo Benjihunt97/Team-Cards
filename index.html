@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <title></title>
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <div id="user-display" class="user-display">
+    </div>
+    <button id="create-user-btn" class="create-user-btn">
+      <svg width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 5l0 14" />
+          <path d="M5 12l14 0" />
+      </svg>
+      <h3 class="create-user-title">Create new User</h3>
+    </button>
+  </div>
+  
+  <div id="create-user-modal" class="create-user-modal hidden">
+    
+    <h2 class="form-title">Create new user</h2>
+    
+    <label for="">Image:</label>
+    <input type="file" id="img-value" accept="image/*">
+    
+    <label for="">Name:</label>
+    <input type="text" id="name-value" placeholder="John Doe">
+    
+    <label for="">Title:</label>
+    <input type="text" id="title-value" placeholder="Graphic Designer">
+    
+    <label for="">Company Logo:</label>
+    <input type="file" id="logo-value">
+    
+    <button id="add-user-btn" class="add-user-btn">Add new user</button>
+    <button id="close-user-modal" class="close-user-modal">Cancel</button>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

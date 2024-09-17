@@ -1,0 +1,152 @@
+:root {
+  --clr-light-blue: #17213F;
+  --clr-dark-blue: #0F162B;
+}
+
+.hidden {
+  display: none !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: system-ui;
+  color: #fff;
+  background: var(--clr-light-blue);
+  overflow-x: hidden;
+}
+
+input,
+button,
+img,
+svg {
+  display: block;
+}
+
+button,
+input {
+  width: fit-content;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  stroke: #fff;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.create-user-btn {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding-block: 3rem;
+  border: 1px solid var(--clr-dark-blue);
+}
+
+.user-display {
+  display: grid;
+  gap: 1rem;
+}
+
+.user-card {
+  background: var(--clr-dark-blue);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.user-details {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: repeat(3, auto);
+  padding: 1rem;
+}
+
+.user-img {
+  height: 175px;
+  object-fit: cover;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.user-title {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.company-logo {
+  width: 150px;
+  margin-top: .75rem;
+}
+
+.create-user-modal {
+  display: grid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 1rem;
+  background: var(--clr-dark-blue);
+  border-radius: .25rem;
+  box-shadow: 4px 7px 12px rgba(200, 200, 200, 0.25);
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.create-user-modal label {
+  margin-bottom: .25rem;
+}
+
+.create-user-modal input {
+  width: 100%;
+  padding: .65rem;
+  border: 1px solid var(--clr-light-blue);
+  border-radius: .125rem;
+  
+  &:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.create-user-modal button {
+  width: 100%;
+  padding-block: .75rem;
+  border-radius: .25rem;
+}
+
+.add-user-btn {
+  margin-bottom: 1rem;
+  background: var(--clr-light-blue);
+}
+
+.close-user-modal {
+  background: #C52A2A;
+}
